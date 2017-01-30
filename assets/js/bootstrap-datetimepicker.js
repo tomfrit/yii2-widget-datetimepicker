@@ -54,7 +54,7 @@
   function timeZoneAbbreviation() {
     var abbreviation, date, formattedStr, i, len, matchedStrings, ref, str;
     date = (new Date()).toString();
-    error.log(date+'  <----');
+    console.log(date+'  <----');
     formattedStr = ((ref = date.split('(')[1]) != null ? ref.slice(0, -1) : 0) || date.split(' ');
     if (formattedStr instanceof Array) {
       matchedStrings = [];
